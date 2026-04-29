@@ -1,0 +1,589 @@
+/* style.css - Playful Neo-Brutalism */
+
+:root {
+  --bg-color: #FDFBF7;
+  --bg-card: #ffffff;
+  --text-dark: #1a1a1a;
+  --text-gray: #4b5563;
+  
+  /* Palette */
+  --primary-green: #10b981;
+  --accent-pink: #fecdd3;
+  --accent-blue: #bae6fd;
+  --accent-lavender: #ddd6fe;
+  --accent-mint: #a7f3d0;
+  --accent-yellow: #fde047;
+
+  /* Shadows and Borders */
+  --border-thick: 3px solid #1a1a1a;
+  --shadow-solid: 6px 6px 0px #1a1a1a;
+  --shadow-pressed: 0px 0px 0px transparent;
+  
+  /* Radius */
+  --radius-card: 12px;
+  --radius-pill: 9999px;
+  
+  --spacing-base: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  line-height: 1.5;
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+
+.human-font {
+  font-family: 'Caveat', cursive;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+}
+
+.neo-box {
+  border: var(--border-thick);
+  box-shadow: var(--shadow-solid);
+}
+
+.neo-border {
+  border: var(--border-thick);
+}
+
+.neo-shadow {
+  box-shadow: var(--shadow-solid);
+}
+
+.neo-pill {
+  border-radius: var(--radius-pill);
+}
+
+.neo-card-radius {
+  border-radius: var(--radius-card);
+}
+
+.neo-interactive {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.neo-interactive:hover {
+  transform: translate(6px, 6px);
+  box-shadow: var(--shadow-pressed);
+}
+
+.neo-btn-interactive {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.neo-btn-interactive:hover {
+  cursor: pointer;
+}
+
+.neo-btn-interactive:active {
+  transform: translate(6px, 6px);
+  box-shadow: var(--shadow-pressed);
+}
+
+/* Base Component Classes */
+.btn-primary {
+  background-color: var(--primary-green);
+  color: var(--text-dark);
+  font-weight: 800;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.btn-secondary {
+  background-color: var(--accent-blue);
+  color: var(--text-dark);
+  font-weight: 800;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 16px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  background: var(--accent-pink);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Typography Specifics */
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+.navbar-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  background-color: var(--bg-card);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 0 100px 0;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-badge {
+  background-color: var(--accent-mint);
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  text-transform: capitalize;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-visual {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Course Progress Card inside Hero */
+.progress-card {
+  background-color: var(--bg-card);
+  padding: 30px;
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+}
+
+.progress-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.progress-icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: var(--accent-lavender);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.progress-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.progress-info p {
+  color: var(--text-gray);
+  font-weight: 600;
+}
+
+.progress-bar-container {
+  margin-bottom: 20px;
+}
+
+.progress-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.progress-track {
+  width: 100%;
+  height: 20px;
+  background-color: var(--accent-mint);
+  border: var(--border-thick);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--primary-green);
+  width: 65%;
+  border-right: var(--border-thick);
+}
+
+.progress-btn {
+  width: 100%;
+}
+
+/* Floating Badges on Hero Visual */
+.float-badge {
+  position: absolute;
+  background-color: var(--bg-card);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  z-index: 10;
+  animation: floatAnim 4s ease-in-out infinite;
+}
+
+.float-badge.target {
+  top: -20px;
+  right: -20px;
+  background-color: var(--accent-pink);
+  animation-delay: 0s;
+}
+
+.float-badge.star {
+  bottom: 20px;
+  right: -30px;
+  background-color: var(--accent-yellow);
+  animation-delay: 2s;
+}
+
+.float-badge.book {
+  bottom: -20px;
+  left: -20px;
+  background-color: var(--accent-lavender);
+  animation-delay: 1s;
+}
+
+@keyframes floatAnim {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Course Grid Section */
+.courses-section {
+  padding: 80px 0;
+}
+
+.section-header-wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  background-color: var(--bg-card);
+  padding: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background-color: var(--accent-pink); /* Overridden via inline style/JS if needed */
+}
+
+.card-rating {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: var(--bg-card);
+  padding: 4px 10px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--primary-green);
+}
+
+.course-card h3 {
+  font-size: 1.4rem;
+  flex: 1;
+  padding-right: 60px; /* Space for rating */
+  line-height: 1.3;
+}
+
+.card-view-btn {
+  margin-top: auto;
+  align-self: flex-start;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  color: var(--text-dark);
+}
+
+/* Value Additions Section */
+.features-section {
+  padding: 80px 0 120px 0;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-box {
+  background-color: var(--bg-card);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background-color: var(--accent-blue);
+  margin-bottom: 20px;
+}
+
+.feature-box h4 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.feature-box p {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+}
+
+/* Modals for Verbatim Notes */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(26, 26, 26, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-content {
+  background-color: var(--bg-color);
+  width: 90%;
+  max-width: 900px;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 40px;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+  transform: translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--accent-pink);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Notes Content Formatting */
+.notes-container {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.notes-container ul {
+  list-style-position: inside;
+  margin-bottom: 20px;
+}
+
+.notes-container li {
+  margin-bottom: 12px;
+}
+
+.notes-container strong {
+  color: var(--primary-green);
+  font-size: 1.15rem;
+}
+
+/* Pro-Tip Value Addition Box */
+.pro-tip {
+  background-color: var(--accent-mint);
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.pro-tip h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* Custom Scrollbar for Modal */
+.modal-content::-webkit-scrollbar {
+  width: 12px;
+}
+.modal-content::-webkit-scrollbar-track {
+  background: var(--bg-color);
+  border-left: var(--border-thick);
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: var(--primary-green);
+  border: var(--border-thick);
+}
+
+/* Placeholders inside notes */
+.chart-placeholder {
+  background-color: var(--accent-lavender);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  font-weight: bold;
+  color: var(--text-gray);
+  text-align: center;
+  flex-direction: column;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+}

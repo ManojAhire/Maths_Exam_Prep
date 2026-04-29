@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Probability & Statistics</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <!-- MathJax -->
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Navbar -->
+    <nav class="navbar-container neo-box neo-pill">
+        <a href="#" class="nav-brand">
+            <span style="font-size:1.5rem;">📚</span> ProbaStat
+        </a>
+        <div class="nav-links">
+            <a href="#">Courses</a>
+            <a href="#syllabus">Notes</a>
+            <a href="#about">About</a>
+        </div>
+        <a href="#syllabus" class="btn-primary neo-box neo-pill neo-btn-interactive">Start Free</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container hero">
+        <div class="hero-content">
+            <div class="badge hero-badge neo-border neo-shadow neo-pill">New: Complete Math Notes</div>
+            <h1>Master Probability & Statistics, Anywhere!</h1>
+            <div class="hero-actions">
+                <a href="#syllabus" class="btn-primary neo-box neo-pill neo-btn-interactive">Start Learning</a>
+                <a href="#syllabus" class="btn-secondary neo-box neo-pill neo-btn-interactive" style="background-color: var(--accent-blue);">Browse Notes</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="float-badge target neo-border neo-shadow neo-pill">🎯</div>
+            <div class="float-badge star neo-border neo-shadow neo-pill">⭐</div>
+            <div class="float-badge book neo-border neo-shadow neo-pill">📗</div>
+            
+            <div class="progress-card neo-box neo-card-radius">
+                <div class="progress-header">
+                    <div class="progress-icon-box neo-border neo-shadow neo-card-radius">▶️</div>
+                    <div class="progress-info">
+                        <h3>Probability Basics</h3>
+                        <p>Track your progress</p>
+                    </div>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-stats">
+                        <span>Progress</span>
+                        <span style="color: var(--primary-green);">65%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+                <button class="btn-primary progress-btn neo-box neo-pill neo-btn-interactive">Continue Learning</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Additions Section (Why Choose Us) -->
+    <section class="container features-section" id="about">
+        <div class="section-header-wrapper">
+            <div class="badge neo-border neo-shadow neo-pill" style="background-color: var(--accent-pink);">Why Choose Us</div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-box neo-box neo-card-radius neo-interactive">
+                <div class="feature-icon-wrapper neo-border neo-shadow neo-card-radius" style="background-color: var(--accent-pink);">⏱️</div>
+                <h4>Learn at Your Pace</h4>
+                <p>Access notes anytime, anywhere. Pause, reference, and review as needed.</p>
+            </div>
+            <div class="feature-box neo-box neo-card-radius neo-interactive">
+                <div class="feature-icon-wrapper neo-border neo-shadow neo-card-radius" style="background-color: var(--accent-blue);">🧑‍🏫</div>
+                <h4>Expert Notes</h4>
+                <p>Learn from exact transcriptions containing real-world heuristics.</p>
+            </div>
+            <div class="feature-box neo-box neo-card-radius neo-interactive">
+                <div class="feature-icon-wrapper neo-border neo-shadow neo-card-radius" style="background-color: var(--accent-yellow);">💡</div>
+                <h4>Real Examples</h4>
+                <p>Enjoy our value-added Pro-Tips featuring real-world scenarios.</p>
+            </div>
+            <div class="feature-box neo-box neo-card-radius neo-interactive">
+                <div class="feature-icon-wrapper neo-border neo-shadow neo-card-radius" style="background-color: var(--accent-mint);">📊</div>
+                <h4>Deep Analytics</h4>
+                <p>Explore concepts from PMF to Central Limit Theorem effectively.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Course Grid (The Notes) -->
+    <section class="container courses-section" id="syllabus">
+        <div class="section-header-wrapper">
+            <div class="badge neo-border neo-shadow neo-pill" style="background-color: var(--accent-lavender);">Syllabus</div>
+            <h2 class="section-title">Explore All 9 Modules</h2>
+        </div>
+        
+        <div class="course-grid">
+            <!-- Card 1 -->
+            <div class="course-card neo-box neo-card-radius neo-btn-interactive open-modal-btn" data-modal="modal-1">
+                <div class="course-card-top">
+                    <div class="card-icon neo-border neo-shadow neo-card-radius" style="background-color: var(--accent-blue);">🎲</div>
+                    <h3>Probability Basics</h3>
+                </div>
+                <div class="card-rating neo-border neo-pill neo-shadow">⭐ 4.9</div>
+                <div class="card-view-btn">Read Notes ➔</div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="course-card neo-box neo-card-radius neo-btn-interactive open-modal-btn" data-modal="modal-2">
+                <div class="course-card-top">
+                    <div class="card-icon neo-border neo-shadow neo-card-radius" style="background-color: var(--accent-pink);">🧮</div>
+                    <h3>Random Variables (X)</h3>
+                </div>
+                <div class="card-rating neo-border neo-pill neo-shadow">⭐ 4.8</div>
+                <div class="card-view-btn">Read Notes ➔</div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="course-card neo-box neo-card-radius neo-btn-interactive open-modal-btn" data-modal="modal-3">
+                <div class="course-card-top">
+                    <div class="card-icon neo-border neo-shadow neo-card-radius" style="background-color: var(--accent-yellow);">📈</div>
+                    <h3>Discrete Probability Distributions</h3>
+                </div>
+                <div class="card-rating neo-border neo-pill neo-shadow">⭐ 4.9</div>
+                <div class="card-view-btn">Read Notes ➔</div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="course-card neo-box neo-card-radius neo-btn-interactive open-modal-btn" data-modal="modal-4">
+                <div class="course-card-top">
+                    <div class="card-icon neo-border neo-shadow neo-card-radius" style="background-color: var(--accent-mint);">📊</div>
+                    <h3>Multiple Random Variables</h3>
+                </div>
+                <div class="card-rating neo-border neo-pill neo-shadow">⭐ 4.7</div>
+                <div class="card-view-btn">Read Notes ➔</div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="course-card neo-box neo-card-radius neo-btn-interactive open-modal-btn" data-modal="modal-5">
+                <div class="course-card-top">
+                    <div class="card-icon neo-border neo-shadow neo-card-radius" style="background-color: var(--accent-lavender);">🌊</div>
+                    <h3>Continuous Probability Distributions</h3>
+                </div>
+                <div class="card-rating neo-border neo-pill neo-shadow">⭐ 5.0</div>
+                <div class="card-view-btn">Read Notes ➔</div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="course-card neo-box neo-card-radius neo-btn-interactive open-modal-btn" data-modal="modal-6">
+                <div class="course-card-top">
+                    <div class="card-icon neo-border neo-shadow neo-card-radius" style="background-color: var(--accent-blue);">📋</div>
+                    <h3>Statistics Fundamentals</h3>
+                </div>
+                <div class="card-rating neo-border neo-pill neo-shadow">⭐ 4.8</div>
+                <div class="card-view-btn">Read Notes ➔</div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="course-card neo-box neo-card-radius neo-btn-interactive open-modal-btn" data-modal="modal-7">
+                <div class="course-card-top">
+                    <div class="card-icon neo-border neo-shadow neo-card-radius" style="background-color: var(--accent-pink);">🧮</div>
+                    <h3>Summarizing Data</h3>
+                </div>
+                <div class="card-rating neo-border neo-pill neo-shadow">⭐ 4.9</div>
+                <div class="card-view-btn">Read Notes ➔</div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="course-card neo-box neo-card-radius neo-btn-interactive open-modal-btn" data-modal="modal-8">
+                <div class="course-card-top">
+                    <div class="card-icon neo-border neo-shadow neo-card-radius" style="background-color: var(--accent-yellow);">📉</div>
+                    <h3>Graphical Summary</h3>
+                </div>
+                <div class="card-rating neo-border neo-pill neo-shadow">⭐ 4.7</div>
+                <div class="card-view-btn">Read Notes ➔</div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="course-card neo-box neo-card-radius neo-btn-interactive open-modal-btn" data-modal="modal-9">
+                <div class="course-card-top">
+                    <div class="card-icon neo-border neo-shadow neo-card-radius" style="background-color: var(--accent-mint);">🧠</div>
+                    <h3>Advanced Concepts</h3>
+                </div>
+                <div class="card-rating neo-border neo-pill neo-shadow">⭐ 4.9</div>
+                <div class="card-view-btn">Read Notes ➔</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for all 9 Modules -->
+
+    <!-- Modal 1 -->
+    <div class="modal-overlay" id="modal-1">
+        <div class="modal-content neo-box neo-card-radius">
+            <div class="modal-close neo-border neo-shadow neo-pill neo-btn-interactive">✕</div>
+            <h2>Section 1: Probability Basics</h2>
+            <div class="notes-container">
+                <ul>
+                    <li><strong>Probability</strong> -> Permutation eg. 3 seats 3 freinds. $3 \times 2 \times 1 = 6 = (3!)$. $P_r = \frac{n!}{(n-r)!}$.</li>
+                    <li>Division Rule TATTER -> $\frac{6!}{3!}$ 6! ways is repeating 3 times.</li>
+                    <li>Round Table $(n-1)!$.</li>
+                    <li>distributing n identical into distinct boxes. $n+r-1 C_{r-1}$.</li>
+                    <li>combination $C_r = \frac{n!}{r!(n-r)!}$.</li>
+                    <li>distinct balls 5 distinct boxes 2 each ball has a choices so, $2^5$.</li>
+                    <li>identical balls 4 identical boxes 2 (4,0) (3,1) (2,2) (1,3) (0,4) identical balls and boxes (4,0) (3,1) (2,2).</li>
+                    <li><strong>Probability Flow:</strong> Random Experiment -> sample space (S) -> Event (subset of S). eg. 2 events A & B.</li>
+                    <li>Mutually Exclusive $A \cap B = \emptyset$, $P(A \cap B) = \emptyset$, $P(A \cup B) = P(A) + P(B)$.</li>
+                    <li>Independent Events $P(A \cap B) = P(A) \times P(B)$. P(B/A) = P(B), P(A/B) = P(A).</li>
+                    <li><strong>Conditional Probability:</strong> $P(A/B) = \frac{P(A \cap B)}{P(B)}$.</li>
+                    <li>Law of Total Probability: P(A) = $\Sigma P(A \cap B_i) P(B_i)$.</li>
+                    <li>Baye's Theorem: P(B/A) = P(A/B)P(B) / P(A) = $\frac{P(A \cap B)}{P(S)} \times \frac{P(B)}{P(A)}$.</li>
+                </ul>
+                <div class="pro-tip neo-box neo-card-radius">
+                    <h4><span style="font-size:24px;">💡</span> Pro-Tip</h4>
+                    <p>Real-world example: <strong>Conditional Probability</strong> is like checking the weather. What's the probability it rains <em>given</em> you saw dark clouds? $P(Rain/Clouds)$.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal-overlay" id="modal-2">
+        <div class="modal-content neo-box neo-card-radius">
+            <div class="modal-close neo-border neo-shadow neo-pill neo-btn-interactive">✕</div>
+            <h2>Section 2: Random Variables (X)</h2>
+            <div class="notes-container">
+                <ul>
+                    <li><strong>Random Variables (X):</strong> function connecting sample space to real numbers. X: S -> R.</li>
+                    <li>Random Experiment -> Sample space -> Event (sample space, getting a head is an event. R.V is an event.).</li>
+                    <li>eg. X = no. of heads in one game. Random Variable can have values like 1 head, 2 head, 3 head... etc. $X \rightarrow \{1, 2, 3... n\}$.</li>
+                    <li><strong>Probability Distributions:</strong> This function assigns probabilities to each possible value of Random Variable (X). eg. X = no. of heads in a game. X = 0 head, 1 head, 2 head. P.D = {1/8, 2/8, 4/8}. Note: sum of all probabilities = 1 here 2/8 + 2/8 + 4/8 = 1.</li>
+                    <li>Types of Random Variables: Discrete, Continous, Mixed.</li>
+                    <li><strong>PMF (Probability Mass Function):</strong> only for discrete RV (X). $P_X(a) = P(X=a)$. gives specific probability for specific number.</li>
+                    <li><strong>PDF (Probability Density function):</strong> Only for continous (x). $P(a \le x \le b) = \int_a^b f_x(x)dx$. Instead of probability of point we calc probability for a range.</li>
+                    <li><strong>CDF (cumulative Distributive function):</strong> $F_X(a) = P(x \le a)$. PdF = d(CDF) derivation of CDF gives us the PDF.</li>
+                    <li><strong>Expected Value (E):</strong> $E(aX+b) = aE(x)+b$ Linearity. $E(X) = \int_{-\infty}^{\infty} x f_x(x)dx$ for continous.</li>
+                    <li><strong>Variance (Var(x)):</strong> $var(X) = E(X^2) - (E(X))^2$. -> $var(x+c) = var(x)$. - $var(aX) = a^2 var(x)$. $var(x+y) = var(x) + var(y)$ only if they are completely independent.</li>
+                    <li><strong>Standard Deviation ($\sigma$):</strong> $\sigma = \sqrt{var(x)}$.</li>
+                </ul>
+                <div class="pro-tip neo-box neo-card-radius" style="background-color: var(--accent-pink);">
+                    <h4><span style="font-size:24px;">💡</span> Pro-Tip</h4>
+                    <p>Real-world example: A <strong>Discrete Random Variable</strong> counts things you can explicitly list, like the number of students in a class. A <strong>Continuous Random Variable</strong> measures things you can't explicitly count, like the exact weight of an apple.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal-overlay" id="modal-3">
+        <div class="modal-content neo-box neo-card-radius">
+            <div class="modal-close neo-border neo-shadow neo-pill neo-btn-interactive">✕</div>
+            <h2>Section 3: Discrete Probability Distributions</h2>
+            <div class="notes-container">
+                <ul>
+                    <li><strong>Discrete Uniform Distribution:</strong> Rule - if you have n possible outcomes, the probability of each one is 1/n. $E(x) = (n+1)/2$. $var(x) = (n^2/12)$.</li>
+                    <li><strong>Bernoulli Random Variable:</strong> Rule - Just 2 possible outcomes True/False. X ~ Bernoulli (P) Probability of success. $E(x) = P$. $var(x) = P(1-P)$.</li>
+                    <li><strong>Binomial Random Variable:</strong> Rule - It is like multiple bernoulli counting how many total successes you got. Independent Trial = Match 1 result doesn't affect result of Match 2. constant Probability = P doesn't change. $P(X=x) = ^nC_x \cdot P^x(1-P)^{n-x}$. you get x wins in n matches. $E(x) = (np)$. $var(x) = nP(1-p)$.</li>
+                    <li><strong>Poisson Distribution:</strong> Rule - How many times an event occurs in a sample space. $P(x=x) = \frac{e^{-\lambda}\lambda^x}{x!}$. X ~ Poisson($\lambda$). $E(x) = \lambda$. $var(x) = (\lambda)$. Note: During Binomial distribution if $n \ge 28$ and $P \le 0.05$ then $\lambda = n \times P$.</li>
+                    <li><strong>Geometric Distribution:</strong> Rule - How many games to play before you get first success. $E(x) = (1/P)$. Geometric (P) $var(x) = (1-P)/P^2$. $P(x=x) = P(1-P)^{x-1}$.</li>
+                    <li>Note: How many failures before success &lt;- $p(x=x) = p(1-p)^x$. $E(x) = (1-p)/p$. $var(x) = (1-p)/p^2$.</li>
+                    <li>Exactly nth trial then, $\Rightarrow p(1-p)^{n-1}$. More than n $\lfloor (1-p)^n$. Atleast n $(1-p)^{n-1}$. Atmost n $1-(1-p)^n$.</li>
+                </ul>
+                <div class="pro-tip neo-box neo-card-radius" style="background-color: var(--accent-yellow);">
+                    <h4><span style="font-size:24px;">💡</span> Pro-Tip</h4>
+                    <p>Real-world example: Use a <strong>Poisson Distribution</strong> to predict how many emails you'll receive in the next hour based on your historical average.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal-overlay" id="modal-4">
+        <div class="modal-content neo-box neo-card-radius">
+            <div class="modal-close neo-border neo-shadow neo-pill neo-btn-interactive">✕</div>
+            <h2>Section 4: Multiple Random Variables</h2>
+            <div class="notes-container">
+                <ul>
+                    <li><strong>Multiple Random Variables:</strong> Tracking 2 different things at the same time. (usually x and y).</li>
+                    <li>Joint Probability: X and Y are true at exact same time. $P(x=x, y=y) = \{(x_1, y_1), ... (x_n, y_n)\}$.</li>
+                    <li>conditional Probability: $P(Y=y | X=x) = P(X=x, Y=y) / P(X=x)$.</li>
+                    <li>Marginal Probability: out of X & Y ignoring one and focusing on other. $P(X=x) = \Sigma_y P(x=x, y=y)$.</li>
+                    <li>Joint Probability Mass Function: $\Sigma_x \Sigma_y P(x=x, y=y) = 1$.</li>
+                </ul>
+                <div class="pro-tip neo-box neo-card-radius" style="background-color: var(--accent-blue);">
+                    <h4><span style="font-size:24px;">💡</span> Pro-Tip</h4>
+                    <p>Real-world example: <strong>Joint Probability</strong> is determining the chance that a customer is both a frequent buyer (X) AND uses a mobile device to shop (Y).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal-overlay" id="modal-5">
+        <div class="modal-content neo-box neo-card-radius">
+            <div class="modal-close neo-border neo-shadow neo-pill neo-btn-interactive">✕</div>
+            <h2>Section 5: Continuous Probability Distributions</h2>
+            <div class="notes-container">
+                <ul>
+                    <li><strong>Continous uniform Distribution:</strong> Rule - defined over specific range [a,b]. $f_x(x) = 1/(b-a)$. $E(x) = (a+b)/2$. $var(x) = (b-a)^2/12$.</li>
+                    <li><strong>Exponential Distribution:</strong> xu uniform (a,b). if poisson says - How many success in a sample space. then exponential - sample space between each success. Pdf $F_x(x) = \lambda e^{-\lambda x}$. xu Exponential (1). $E(x) = 1/\lambda$, $Var(X) = 1/\lambda^2$. CDF $F_X(x) = 1 - e^{-\lambda x}$. Note: for greater than $P(x>x)$ use $e^{-\lambda x}$.</li>
+                    <li><strong>Memory less property:</strong> $P(x>t+s | x>s) = P(x>t)$. Exponentiation is memory less property.</li>
+                    <li><strong>Normal Random Variable:</strong> continous R.V(x) is Normal RV if its pdf $f(x | \mu, \sigma) = \frac{1}{\sigma\sqrt{2\pi}} e^{...}$. $X \sim N(\mu, \sigma^2)$. It has symmetrical Bell shape. -> mean = median. Note: Empirical Rule 68% -> $1\sigma$ deviation from mean, 95% -> $2\sigma$, 99.7% -> $3\sigma$.</li>
+                    
+                    <div class="chart-placeholder neo-border neo-radius-card">
+                        <span style="font-size:40px;">🔔</span>
+                        <span>[Normal Distribution Bell Shape Visualization]</span>
+                    </div>
+
+                    <li><strong>z-score:</strong> Tells exactly how many $\sigma$ a point is away from mean. $z = \frac{x-\mu}{\sigma}$. Note: converts Normal into standard Normal distribution $N(0,1)$. z>0 - score is above avg, z&lt;0 - below avg.</li>
+                    <li><strong>Standard Normal Random Variable:</strong> $\mu=0, \sigma^2=1$. $Z \sim N(0,1)$. PDF $\phi(z) = \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2}z^2}$. CDF $P(Z \le \alpha)$. Learn z table for $P(z \le \alpha)$, $P(z \ge \alpha)$, $P(a &lt; z \le b)$.</li>
+                </ul>
+                <div class="pro-tip neo-box neo-card-radius" style="background-color: var(--accent-lavender);">
+                    <h4><span style="font-size:24px;">💡</span> Pro-Tip</h4>
+                    <p>Real-world example: The <strong>Normal Distribution</strong> models human heights brilliantly. Most people are near the average height (the peak of the bell curve), with very few extremely tall or extremely short outliers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal-overlay" id="modal-6">
+        <div class="modal-content neo-box neo-card-radius">
+            <div class="modal-close neo-border neo-shadow neo-pill neo-btn-interactive">✕</div>
+            <h2>Section 6: Statistics Fundamentals</h2>
+            <div class="notes-container">
+                <ul>
+                    <li><strong>Statistics:</strong> Probability: You know the rules and try to guess the outcome. Statistics: You have the outcome and try to guess the rules.</li>
+                    <li>Population - whole set of people. sample - manageable subset of population. Parameter - fixed, secret number describing a population. Statistics - numbers you calc from sample. Note: If you select different samples their statistics differ a little : STATISTIC is a random variable.</li>
+                    <li><strong>Sampling Methods:</strong>
+                        <ul>
+                            <li>1. simple Random Sample: (Lottery Method) Everyone has exact same chance of being selected.</li>
+                            <li>2. Stratified sample:- Population is divided into groups and a sample is made by atleast selecting 1 from each group. Note: Every group is fairly represented.</li>
+                            <li>3. Cluster sample:- Population is divided into groups and randomly selecting groups. That means every person of the selected group is selected in sample.</li>
+                            <li>4. systematic sampling:- sample selecting every kth element.</li>
+                        </ul>
+                    </li>
+                    <li>Selection Bias / Sampling Bias: Non response Bias, survivorship Bias.</li>
+                    <li><strong>Types of Data:</strong> Before solving a problem we collect a data.
+                        <ul>
+                            <li>Qualitative Data (categorical) -> Nominal (without order eg. Blood group, gender), Ordinal (ordered eg. Rank).</li>
+                            <li>Quantitative Data (numerical) -> Discrete, continous.</li>
+                        </ul>
+                    </li>
+                    <li>Note: We can't understand data easily just by looking at number. As data can be messy jumble. To make sense of that messy list data we use this 2 tools. Numerical summary : doing simple math to find the center (Mean, Median, Mode). Graphical summary (Histogram Box Plot) so your eyes can see them patterns instantly.</li>
+                </ul>
+                <div class="pro-tip neo-box neo-card-radius" style="background-color: var(--accent-mint);">
+                    <h4><span style="font-size:24px;">💡</span> Pro-Tip</h4>
+                    <p>Real-world example: <strong>Survivorship Bias</strong> is observing only the startups that succeed to deduce "how to build a startup", ignoring all the startups that failed using the exact same strategy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7 -->
+    <div class="modal-overlay" id="modal-7">
+        <div class="modal-content neo-box neo-card-radius">
+            <div class="modal-close neo-border neo-shadow neo-pill neo-btn-interactive">✕</div>
+            <h2>Section 7: Summarizing Data</h2>
+            <div class="notes-container">
+                <ul>
+                    <li><strong>Numerical Summary (Measures of central Tendency):</strong> 1. Mean ($\bar{x}$) = $\Sigma x_i / n$. 2. Median (The middle Guy). 3. Mode (Most Popular). Note: Mean is sentive to outliers.</li>
+                    <li><strong>shape of your data (Skewness):</strong> 1. symmetric Distribution: mean = median = mode. 2. Right / Positive Skew: mean > median > mode. 3. Left / Negative Skew: mean &lt; median &lt; mode.</li>
+                    <li>Note: Problem: Now spread out of data. To Understand spread of Data we use MEASURES OF VARIABILITY:
+                        <ul>
+                            <li>1. Range: (max-min). simplest calculation. Range is sensitive of outliers.</li>
+                            <li>2. Variance: How far on average each individual number is from MEAN. Sample Variance $s^2 = \Sigma_{i=1}^n (x_i - \bar{x})^2 / n-1$. Population Variance $\sigma^2 = \Sigma_{i=1}^n (x_i - \bar{x})^2 / n$.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="pro-tip neo-box neo-card-radius" style="background-color: var(--accent-pink);">
+                    <h4><span style="font-size:24px;">💡</span> Pro-Tip</h4>
+                    <p>Real-world example: If Bill Gates walks into an average bar, the <strong>Mean</strong> wealth in the bar shoots into the billions. But the <strong>Median</strong> wealth stays exactly the same. The median is the "middle guy" and resists outliers!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8 -->
+    <div class="modal-overlay" id="modal-8">
+        <div class="modal-content neo-box neo-card-radius">
+            <div class="modal-close neo-border neo-shadow neo-pill neo-btn-interactive">✕</div>
+            <h2>Section 8: Graphical Summary</h2>
+            <div class="notes-container">
+                <ul>
+                    <li><strong>Graphical Summary</strong>
+                        <ul>
+                            <li>1. Histogram: we group nearby values into an interval called "bins". eg. Fries count. Bin 1 (45-49), Bin2 (50-54), Bin3 (55-59). Freq 4. Shape is Right skewed. Note: Histogram shows us : center: where most values lie (here 4), spread:- range of values (45 to 62), Shape:- Right skewed. over smoothing: bins are too large/wide. under smoothing: bins are too narrow.</li>
+                            
+                            <div class="chart-placeholder neo-border neo-radius-card" style="background-color: var(--accent-blue);">
+                                <span style="font-size:40px;">📊</span>
+                                <span>[Right-skewed Histogram Visualization : Fries count]</span>
+                            </div>
+
+                            <li>2. Box-Plot: Q-Quartiles. min, $Q_1$ (25%), $Q_2$ (median 50%), $Q_3$ (75%), max (whiskers). $IQR = Q_3 - Q_1$. Catching Outliers: $x &lt; Q_1 - 1.5(IQR)$ or $x &gt; Q_3 + 1.5(IQR)$. Right skewed, Left skewed. Note: Histogram shows Everything. Box plot tells you what matters.</li>
+                            
+                            <div class="chart-placeholder neo-border neo-radius-card" style="background-color: var(--accent-pink);">
+                                <span style="font-size:40px;">📉</span>
+                                <span>[Box-Plot Visualization : Catching Outliers]</span>
+                            </div>
+
+                        </ul>
+                    </li>
+                </ul>
+                <div class="pro-tip neo-box neo-card-radius" style="background-color: var(--accent-yellow);">
+                    <h4><span style="font-size:24px;">💡</span> Pro-Tip</h4>
+                    <p>Real-world example: A <strong>Box Plot</strong> is perfect for analyzing salary data. The "box" will instantly tell you what the middle 50% of employees earn (the $IQR$), while the "whiskers" identify unusually high-paid outliers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9 -->
+    <div class="modal-overlay" id="modal-9">
+        <div class="modal-content neo-box neo-card-radius">
+            <div class="modal-close neo-border neo-shadow neo-pill neo-btn-interactive">✕</div>
+            <h2>Section 9: Advanced Concepts</h2>
+            <div class="notes-container">
+                <ul>
+                    <li><strong>Covariance:-</strong> Measures how 2 variables vary together. $Cov(X,Y) = \frac{\Sigma(x_i - \bar{x})(y_i - \bar{y})}{n-1}$. $Cov(X,Y) > 0$, move in the same $dir^n$ ($X\uparrow Y\uparrow$ OR $X\downarrow Y\downarrow$). $Cov(X,Y) &lt; 0$ move in opposite ($X\uparrow Y\downarrow$ OR $X\downarrow Y\uparrow$). $Cov(X,Y) = 0$ no linear relationship.</li>
+                    <li><strong>Correlation:-</strong> standardized version of covariance. $r = \frac{Cov(X,Y)}{\sigma_X \sigma_Y}$. $r=+1$ positive correlation, $r=-1$ (negative) Correlation, $r=0$ (no correlation). Pearson straight line. spearman flexible line. Simplified formula $r = \frac{n\Sigma x_i y_i - (\Sigma x_i)(\Sigma y_i)}{\sqrt{(n\Sigma x_i^2 - (\Sigma x_i)^2)(n\Sigma y_i^2 - (\Sigma y_i)^2)}}$.</li>
+                    <li><strong>LLN (Law of Large Numbers):</strong> if $X_1, X_2, X_3 ... X_n$ are iid random variable $E(X_i)=\mu$, $Var(x_i)=\sigma^2$. converge to $\mu$ as $n \rightarrow \infty$. $E[\bar{X}] = \mu = E[X]$. $Var[\bar{X}] = \sigma^2 / n$. $SD(\bar{X}) = \sigma / \sqrt{n}$. Note: This Sample standard deviation $SD(\bar{X})$ is called as Standard Error. because it tells how much our sample avg is wrong from true population avg.</li>
+                    <li><strong>CLT (Central Limit Theorem):</strong> if $X \sim (\mu, \sigma^2)$, then $\frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \sim N(0,1)$. the distribution of sample averages will form perfect Normal Distribution symmetric bell shape.</li>
+                </ul>
+                <div class="pro-tip neo-box neo-card-radius" style="background-color: var(--accent-mint);">
+                    <h4><span style="font-size:24px;">💡</span> Pro-Tip</h4>
+                    <p>Real-world example: The <strong>Law of Large Numbers</strong> suggests that the more times you flip a coin, the closer your actual results will get precisely to a perfect 50/50 split of Heads and Tails.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
